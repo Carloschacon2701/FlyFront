@@ -1,25 +1,26 @@
 "use client";
 
-import { Input } from "@/components/Inputs/Input";
-import { Modal } from "@/components/Modals/Modal";
-import { Field, Form, Formik } from "formik";
 import React from "react";
+import { Modal } from "@/components/Modals/Modal";
+import { Formik, Form } from "formik";
+import { Input } from "@/components/Inputs/Input";
 
 const Login = () => {
   return (
-    <Modal link="/">
-      <h1 className="text-center text-darkBlue text-lg font-semibold">Login</h1>
+    <Modal>
       <Formik
         initialValues={{ email: "", password: "" }}
         onSubmit={(values) => {
           console.log(values);
         }}
       >
-        <Form className="flex flex-col gap-2 p-10 w-auto h-auto">
+        <Form className="flex flex-col gap-3 p-5 w-auto h-auto text-typo">
           <Input type="email" name="email" />
           <Input type="password" name="password" />
 
-          <button type="submit">Submit</button>
+          <button type="submit" className="btn mt-1">
+            Submit
+          </button>
         </Form>
       </Formik>
     </Modal>

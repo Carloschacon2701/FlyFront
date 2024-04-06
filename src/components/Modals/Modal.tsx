@@ -3,14 +3,13 @@ import { CloseModalButton } from "./CloseModalButton";
 
 interface Props {
   children: React.ReactNode;
-  link: string;
 }
 
-export const Modal = ({ children, link }: Props) => {
+export const Modal = ({ children }: Props) => {
   return (
     <dialog className="modal modal-open">
       <div className="modal-box bg-white">
-        <CloseModalButton link={link} />
+        <CloseModalButton />
         {children}
       </div>
     </dialog>
