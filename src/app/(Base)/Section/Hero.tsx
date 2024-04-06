@@ -8,8 +8,10 @@ const Hero = () => {
       <div className="relative">
         <p className="text-7xl font-semibold leading-[1.3] text-darkBlue">
           Let&apos;s <br />{" "}
-          <span className="underline decoration-orange-500 ">travel</span> the{" "}
-          <br />
+          <span className="underline decoration-orange-500 ">
+            travel around
+          </span>{" "}
+          the <br />
           world
         </p>
         <p>

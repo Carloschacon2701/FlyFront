@@ -3,13 +3,15 @@ import React from "react";
 
 interface Props {
   children: React.ReactNode;
+  modal: React.ReactNode;
 }
 
-const layout = ({ children }: Props) => {
+const layout = ({ children, modal }: Props) => {
   return (
     <section>
       <Header />
       {children}
+      {modal}
     </section>
   );
 };

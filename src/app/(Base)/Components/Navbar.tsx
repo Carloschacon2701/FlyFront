@@ -26,7 +26,7 @@ const Navbar = () => {
           </Link>
         ))}
         <Link
-          href="/login"
+          href="/Login"
           className="button btn btn-sm w-28 h-10 text-white hover:bg-lightBlue hover:text-white transition-all ease-in-out duration-150 border-none "
         >
           Login
